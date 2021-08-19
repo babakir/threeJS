@@ -8,17 +8,21 @@
 	<link rel="apple-touch-icon" href="images/icon.png">
 	<link rel="manifest" href="manifest.json">
 	<link rel="shortcut icon" href="../files/favicon.ico" />
-	<script>
+	<!-- <script>
 		const modernBrowser = 'fetch' in window && 'assign' in Object;
 
-		if (modernBrowser) {
-			const scriptElement = document.createElement('script');
+		const scriptElement = document.createElement('script');
 
-			scriptElement.async = false;
-			scriptElement.src = '/polyfills.bundle.js';
-			document.head.appendChild(scriptElement);
+		scriptElement.async = false;
+		scriptElement.src = 'polyfills.bundle.js';
+		document.head.appendChild(scriptElement);
+
+		if (modernBrowser) {
+			console.log(modernBrowser);
 		}
-	</script>
+	</script> -->
+	<script src="polyfills.bundle.js"></script>
+	<script type="module" src="index.bundle.js"></script>
 </head>
 
 <body>
@@ -34,8 +38,8 @@
 	<link rel="stylesheet" href="js/libs/codemirror/addon/show-hint.css">
 	<link rel="stylesheet" href="js/libs/codemirror/addon/tern.css">
 
-	
-	<script src="../examples/js/libs/draco/draco_encoder.js"></script>
+
+	<!-- <script src="../examples/js/libs/draco/draco_encoder.js"></script>
 	<script src="js/libs/codemirror/codemirror.js"></script>
 	<script src="js/libs/codemirror/mode/javascript.js"></script>
 	<script src="js/libs/codemirror/mode/glsl.js"></script>
@@ -55,35 +59,8 @@
 	<script src="js/libs/ternjs/infer.js"></script>
 	<script src="js/libs/ternjs/doc_comment.js"></script>
 	<script src="js/libs/tern-threejs/threejs.js"></script>
-	<script src="js/libs/signals.min.js"></script>
+	<script src="js/libs/signals.min.js"></script> -->
 
-
-	<!-- <script type="module" src="../examples/js/libs/draco/draco_encoder.js"></script>
-	<script type="module" src="js/libs/codemirror/codemirror.js"></script>
-	<script type="module" src="js/libs/codemirror/mode/javascript.js"></script>
-	<script type="module" src="js/libs/codemirror/mode/glsl.js"></script>
-	<script type="module" src="js/libs/esprima.js"></script>
-	<script type="module" src="js/libs/jsonlint.js"></script>
-	<script type="module" src="js/libs/codemirror/addon/dialog.js"></script>
-	<script type="module" src="js/libs/codemirror/addon/show-hint.js"></script>
-	<script type="module" src="js/libs/codemirror/addon/tern.js"></script>
-	<script type="module" src="js/libs/acorn/acorn.js"></script>
-	<script type="module" src="js/libs/acorn/acorn_loose.js"></script>
-	<script type="module" src="js/libs/acorn/walk.js"></script>
-	<script type="module" src="js/libs/ternjs/polyfill.js"></script>
-	<script type="module" src="js/libs/ternjs/signal.js"></script>
-	<script type="module" src="js/libs/ternjs/tern.js"></script>
-	<script type="module" src="js/libs/ternjs/def.js"></script>
-	<script type="module" src="js/libs/ternjs/comment.js"></script>
-	<script type="module" src="js/libs/ternjs/infer.js"></script>
-	<script type="module" src="js/libs/ternjs/doc_comment.js"></script>
-	<script type="module" src="js/libs/tern-threejs/threejs.js"></script>
-	<script type="module" src="js/libs/signals.min.js"></script> -->
-
-
-	<script type="module" src="index.bundle.js"></script>
-	<!-- <script type="module" src="index.js"></script> -->
-	<!-- <script type="module" src="../build/threeIndex.js"></script> -->
 </body>
 
 </html>
