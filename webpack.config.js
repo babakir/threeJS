@@ -62,6 +62,10 @@ module.exports = {
     },
     module: {
         rules: [
+            {
+                test: require.resolve('./editor/index.js'),
+                // use: 'imports-loader?wrapper=window',
+            },
             // {
             //     test: /\.m?js$/,
             //     exclude: /node_modules/,

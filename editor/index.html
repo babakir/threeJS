@@ -11,7 +11,7 @@
 	<script>
 		const modernBrowser = 'fetch' in window && 'assign' in Object;
 
-		if (!modernBrowser) {
+		if (modernBrowser) {
 			const scriptElement = document.createElement('script');
 
 			scriptElement.async = false;
@@ -81,8 +81,8 @@
 	<script type="module" src="js/libs/signals.min.js"></script> -->
 
 
-	<!-- <script type="module" src="index.bundle.js"></script> -->
-	<script type="module" src="index.js"></script>
+	<script type="module" src="index.bundle.js"></script>
+	<!-- <script type="module" src="index.js"></script> -->
 	<!-- <script type="module" src="../build/threeIndex.js"></script> -->
 </body>
 
