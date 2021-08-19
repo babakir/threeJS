@@ -189,7 +189,7 @@ function addons() {
 
 			if ( /\/examples\/jsm\//.test( id ) === false ) return;
 
-			code = code.replace( 'build/three.module.js', 'src/Three.js' );
+			code = code.replace( 'build/three.js', 'src/Three.js' );
 
 			return {
 				code: code,
@@ -332,7 +332,7 @@ export default [
 		output: [
 			{
 				format: 'esm',
-				file: 'build/three.module.js'
+				file: 'build/three.js'
 			}
 		]
 	}

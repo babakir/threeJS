@@ -2,7 +2,7 @@ import {
 	Curve,
 	ParametricGeometry,
 	Vector3
-} from '../../../build/three.module.js';
+} from '../../../build/three.js';
 
 /**
  * Experimenting of primitive geometry creation using Surface Parametric equations

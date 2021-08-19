@@ -19,7 +19,7 @@ import {
 	RepeatWrapping,
 	TextureLoader,
 	sRGBEncoding
-} from '../../../build/three.module.js';
+} from '../../../build/three.js';
 import * as fflate from '../libs/fflate.module.js';
 
 /**

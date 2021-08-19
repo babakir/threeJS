@@ -17,7 +17,7 @@ import {
 	Group,
 	Loader,
 	FileLoader,
-} from "../../../build/three.module.js";
+} from "../../../build/three.js";
 import { BufferGeometryUtils } from "../utils/BufferGeometryUtils.js";
 
 const IdAttrName = "expressID";

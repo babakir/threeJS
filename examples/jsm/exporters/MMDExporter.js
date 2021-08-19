@@ -2,7 +2,7 @@ import {
 	Matrix4,
 	Quaternion,
 	Vector3
-} from '../../../build/three.module.js';
+} from '../../../build/three.js';
 import { MMDParser } from '../libs/mmdparser.module.js';
 
 /**

@@ -5,7 +5,7 @@ const webpack = require('webpack');
 module.exports = {
     // entry: [
     //     // import: './src/Three.js',
-    //     // './build/three.module.js',
+    //     // './build/three.js',
 
     //     // './examples/js/libs/draco/draco_encoder.js',
 
@@ -33,6 +33,14 @@ module.exports = {
     //     // './editor/js/libs/signals.min.js',
     //     './editor/index.js'
     // ],
+    resolve: {
+        fallback: {
+            fs: false,
+            path: false,
+            file: false,
+            system: false
+        }
+    },
     entry: {
         polyfills: './editor/polyfills',
         index: './editor/index.js',
@@ -50,14 +58,20 @@ module.exports = {
         publicPath: "/",
         contentBase: "./",
         hot: true,
-        port: 9090,
+        port: 8080,
     },
     module: {
         rules: [
             {
-                test: require.resolve('./editor/index.js'),
-                use: 'imports-loader?wrapper=window',
-            },
+                test: /\.m?js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
+                }
+            }
         ]
     }
 };

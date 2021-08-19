@@ -5,7 +5,7 @@ import {
 	NumberKeyframeTrack,
 	Vector3,
 	VectorKeyframeTrack
-} from '../../../build/three.module.js';
+} from '../../../build/three.js';
 
 class AnimationClipCreator {
 

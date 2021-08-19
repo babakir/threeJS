@@ -1,4 +1,4 @@
-import * as THREE from '../../build/three.module.js';
+import * as THREE from '../../build/three.js';
 
 import { UIRow, UIText, UIInteger, UINumber } from './libs/ui.js';
 import { UIPoints2 } from './libs/ui.three.js';

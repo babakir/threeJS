@@ -7,7 +7,7 @@ import {
 	TextureLoader,
 	UVMapping,
 	sRGBEncoding
-} from '../../../build/three.module.js';
+} from '../../../build/three.js';
 import { MD2Loader } from '../loaders/MD2Loader.js';
 
 class MD2Character {

@@ -1,34 +1,57 @@
 
 
-// requirejs(['../examples/js/libs/draco/draco_encoder.js']);
+// require('../examples/js/libs/draco/draco_encoder.js');
 
-// requirejs(['./js/libs/codemirror/codemirror.js']);
-// requirejs(['./js/libs/codemirror/mode/javascript.js']);
-// requirejs(['./js/libs/codemirror/mode/glsl.js']);
+// require('./js/libs/codemirror/codemirror.js');
+// require('./js/libs/codemirror/mode/javascript.js');
+// require('./js/libs/codemirror/mode/glsl.js');
 
-// requirejs(['./js/libs/esprima.js']);
-// requirejs(['./js/libs/jsonlint.js']);
+// require('./js/libs/esprima.js');
+// require('./js/libs/jsonlint.js');
 
-// requirejs(['./js/libs/codemirror/addon/dialog.js']);
-// requirejs(['./js/libs/codemirror/addon/show-hint.js']);
-// requirejs(['./js/libs/codemirror/addon/tern.js']);
-// requirejs(['./js/libs/acorn/acorn.js']);
-// requirejs(['./js/libs/acorn/acorn_loose.js']);
-// requirejs(['./js/libs/acorn/walk.js']);
-// requirejs(['./js/libs/ternjs/polyfill.js']);
-// requirejs(['./js/libs/ternjs/signal.js']);
-// requirejs(['./js/libs/ternjs/tern.js']);
-// requirejs(['./js/libs/ternjs/def.js']);
-// requirejs(['./js/libs/ternjs/comment.js']);
-// requirejs(['./js/libs/ternjs/infer.js']);
-// requirejs(['./js/libs/ternjs/doc_comment.js']);
-// requirejs(['./js/libs/tern-threejs/threejs.js']);
-// requirejs(['./js/libs/signals.min.js']);
+// require('./js/libs/codemirror/addon/dialog.js');
+// require('./js/libs/codemirror/addon/show-hint.js');
+// require('./js/libs/codemirror/addon/tern.js');
+// require('./js/libs/acorn/acorn.js');
+// require('./js/libs/acorn/acorn_loose.js');
+// require('./js/libs/acorn/walk.js');
+// require('./js/libs/ternjs/polyfill.js');
+// require('./js/libs/ternjs/signal.js');
+// require('./js/libs/ternjs/tern.js');
+// require('./js/libs/ternjs/def.js');
+// require('./js/libs/ternjs/comment.js');
+// require('./js/libs/ternjs/infer.js');
+// require('./js/libs/ternjs/doc_comment.js');
+// require('./js/libs/tern-threejs/threejs.js');
+// require('./js/libs/signals.min.js');
+
+// import '../examples/js/libs/draco/draco_encoder.js';
+
+// import './js/libs/codemirror/codemirror.js';
+// import './js/libs/codemirror/mode/javascript.js';
+// import './js/libs/codemirror/mode/glsl.js';
+
+// import './js/libs/esprima.js';
+// import './js/libs/jsonlint.js';
+
+// import './js/libs/codemirror/addon/dialog.js';
+// import './js/libs/codemirror/addon/show-hint.js';
+// import './js/libs/codemirror/addon/tern.js';
+// import './js/libs/acorn/acorn.js';
+// import './js/libs/acorn/acorn_loose.js';
+// import './js/libs/acorn/walk.js';
+// import './js/libs/ternjs/polyfill.js';
+// import './js/libs/ternjs/signal.js';
+// import './js/libs/ternjs/tern.js';
+// import './js/libs/ternjs/def.js';
+// import './js/libs/ternjs/comment.js';
+// import './js/libs/ternjs/infer.js';
+// import './js/libs/ternjs/doc_comment.js';
+// import './js/libs/tern-threejs/threejs.js';
+// import './js/libs/signals.min.js';
 
 
-
-
-import * as THREE from '../build/three.module.js';
+import * as THREE from '../build/three.js';
 
 import { Editor } from './js/Editor.js';
 import { Viewport } from './js/Viewport.js';

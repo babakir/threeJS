@@ -1,4 +1,4 @@
-import * as THREE from '../../build/three.module.js';
+import * as THREE from '../../build/three.js';
 
 import { zipSync, strToU8 } from '../../examples/jsm/libs/fflate.module.js';
 
@@ -469,9 +469,9 @@ function MenubarFile( editor ) {
 			toZip[ 'js/app.js' ] = strToU8( content );
 
 		} );
-		loader.load( '../build/three.module.js', function ( content ) {
+		loader.load( '../build/three.js', function ( content ) {
 
-			toZip[ 'js/three.module.js' ] = strToU8( content );
+			toZip[ 'js/three.js' ] = strToU8( content );
 
 		} );
 		loader.load( '../examples/jsm/webxr/VRButton.js', function ( content ) {
