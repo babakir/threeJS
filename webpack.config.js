@@ -5,7 +5,7 @@ const webpack = require('webpack');
 module.exports = {
     // entry: [
     //     // import: './src/Three.js',
-    //     // './build/three.js',
+    //     // './build/three.module.js',
 
     //     // './examples/js/libs/draco/draco_encoder.js',
 
@@ -62,16 +62,16 @@ module.exports = {
     },
     module: {
         rules: [
-            {
-                test: /\.m?js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader",
-                    options: {
-                        presets: ['@babel/preset-env']
-                    }
-                }
-            }
+            // {
+            //     test: /\.m?js$/,
+            //     exclude: /node_modules/,
+            //     use: {
+            //         loader: "babel-loader",
+            //         options: {
+            //             presets: ['@babel/preset-env']
+            //         }
+            //     }
+            // }
         ]
     }
 };

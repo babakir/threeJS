@@ -15,7 +15,7 @@ import {
 	UnsignedShortType,
 	NearestFilter,
 	Plane
-} from '../../../build/three.js';
+} from '../../../build/three.module.js';
 
 class ReflectorForSSRPass extends Mesh {
 

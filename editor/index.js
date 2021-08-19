@@ -51,7 +51,7 @@
 // import './js/libs/signals.min.js';
 
 
-import * as THREE from '../build/three.js';
+import * as THREE from '../build/three.module.js';
 
 import { Editor } from './js/Editor.js';
 import { Viewport } from './js/Viewport.js';

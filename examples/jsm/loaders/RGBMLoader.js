@@ -5,7 +5,7 @@ import {
 	LinearFilter,
 	CubeTexture,
 	RGBM7Encoding
-} from '../../../build/three.js';
+} from '../../../build/three.module.js';
 
 class RGBMLoader extends DataTextureLoader {
 

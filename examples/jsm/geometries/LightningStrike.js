@@ -5,7 +5,7 @@ import {
 	MathUtils,
 	Uint32BufferAttribute,
 	Vector3
-} from '../../../build/three.js';
+} from '../../../build/three.module.js';
 import { SimplexNoise } from '../math/SimplexNoise.js';
 
 /**

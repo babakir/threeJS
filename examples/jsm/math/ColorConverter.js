@@ -1,6 +1,6 @@
 import {
 	MathUtils
-} from '../../../build/three.js';
+} from '../../../build/three.module.js';
 
 const _hsl = {};
 

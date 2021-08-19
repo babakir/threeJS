@@ -4,7 +4,7 @@ import {
 	UniformsLib,
 	UniformsUtils,
 	Vector2
-} from '../../../build/three.js';
+} from '../../../build/three.module.js';
 
 /**
  * parameters = {

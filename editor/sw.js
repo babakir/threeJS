@@ -10,7 +10,7 @@ const assets = [
 
 	'../files/favicon.ico',
 
-	'../build/three.js',
+	'../build/three.module.js',
 
 	'../examples/jsm/controls/TransformControls.js',
 

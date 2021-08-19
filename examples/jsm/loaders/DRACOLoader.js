@@ -3,7 +3,7 @@ import {
 	BufferGeometry,
 	FileLoader,
 	Loader
-} from '../../../build/three.js';
+} from '../../../build/three.module.js';
 
 const _taskCache = new WeakMap();
 
