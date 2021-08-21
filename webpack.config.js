@@ -15,6 +15,7 @@ module.exports = {
         polyfills: './editor/polyfills.js',
         index: './editor/index.js',
     },
+    target: "web",
     mode: 'development',
     output: {
         path: __dirname,
@@ -29,6 +30,9 @@ module.exports = {
         contentBase: "./",
         hot: true,
         port: 8080,
+        watchOptions: {
+            poll: true
+        }
     },
     module: {
         rules: [
@@ -36,27 +40,18 @@ module.exports = {
                 test: require.resolve('./editor/index.js'),
                 // use: 'imports-loader?wrapper=window',
             },
-            // {
-            //     test: /\.exec\.js$/,
-            //     use: [
-            //         {
-            //             loader: 'script-loader',
-            //             options: {
-            //                 useStrict: true,
-            //             },
-            //         }
-            //     ]
-            // }
-            // {
-            //     test: /\.m?js$/,
-            //     exclude: /node_modules/,
-            //     use: {
-            //         loader: "babel-loader",
-            //         options: {
-            //             presets: ['@babel/preset-env']
-            //         }
-            //     }
-            // }
+            {
+                test: /\.exec\.js$/,
+                use: [
+                    {
+                        loader: 'script-loader',
+                        options: {
+                            useStrict: false,
+                            sourceMap: true,
+                        },
+                    }
+                ]
+            }
         ]
     }
 };
